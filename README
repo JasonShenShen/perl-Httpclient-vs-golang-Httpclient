@@ -1,9 +1,10 @@
 # perl-Httpclient-vs-golang-Httpclient
-use Anyevent::Http VS use Golang goroutine , both 1000 concurrency
+use Anyevent::Ping VS use Golang goroutine, both 1000 concurrency to request nginx server
+
 
 ##benchmark
 ```
-server:nginx  client : aeperl  600并发 50000 connection 26s 50000 success
+server:nginx  client : aeperl  600虏垄路垄 50000 connection 26s 50000 success
 
 bash-4.1$ time perl aehttp.pl >tb.log
 
@@ -11,7 +12,7 @@ real    0m26.217s
 user    0m25.289s
 sys     0m0.911s
 
-server:nginx  client : golang  600并发 50000 connection 16s 50000 success
+server:nginx  client : golang  600虏垄路垄 50000 connection 16s 50000 success
 
 -bash-4.1$  time go run httptest.go >tb.log
 
