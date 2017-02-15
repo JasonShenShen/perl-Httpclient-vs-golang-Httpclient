@@ -4,7 +4,7 @@ use Anyevent::Http VS use Golang goroutine, both 1000 concurrency request 50000 
 
 ##benchmark
 ```
-server:nginx  client : aeperl  600²¢·¢ 50000 connection 26s 50000 success
+server:nginx  client : aeperl  600 concurrency 50000 connection 26s 50000 success
 
 bash-4.1$ time perl aehttp.pl >tb.log
 
@@ -12,7 +12,7 @@ real    0m26.217s
 user    0m25.289s
 sys     0m0.911s
 
-server:nginx  client : golang  600²¢·¢ 50000 connection 16s 50000 success
+server:nginx  client : golang  600 concurrency 50000 connection 16s 50000 success
 
 -bash-4.1$  time go run httptest.go >tb.log
 
